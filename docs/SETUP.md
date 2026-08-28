@@ -53,7 +53,8 @@ docker ps
 ## Paso 5: Verificar todo
 
 ```bash
-npm run verify
+npm run verify                 # Linux / macOS
+python scripts/verify.py       # Windows
 ```
 
 Si todo esta bien, veras checkmarks verdes. Si algo falla, consulta `TROUBLESHOOTING.md`.
@@ -149,8 +150,14 @@ Para la referencia completa de agentes, skills y convenciones, ver `CLAUDE.md`.
 ## Setup automatico (alternativa)
 
 ```bash
+# Linux / macOS
 chmod +x scripts/setup.sh
 ./scripts/setup.sh
+```
+
+```bash
+# Windows (o cualquier sistema con Python 3.8+)
+python scripts/setup.py
 ```
 
 Este script hace todo automaticamente: instala dependencias, levanta Docker y verifica que todo funciona.

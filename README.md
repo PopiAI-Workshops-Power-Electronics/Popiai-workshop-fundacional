@@ -58,8 +58,27 @@ npm install
 docker compose up -d
 
 # 4. Verificar que todo esta bien
-npm run verify
+npm run verify                 # Linux / macOS
+python scripts/verify.py       # Windows
 ```
+
+### Setup automatico (alternativa)
+
+Los pasos 2 a 4 tambien se pueden hacer con un unico script, que instala las dependencias,
+levanta MongoDB y espera a que responda. Hay dos versiones equivalentes:
+
+```bash
+# Con bash (Linux / macOS)
+npm run setup                  # o ./scripts/setup.sh
+npm run verify                 # o ./scripts/verify.sh
+
+# Con Python 3.8+ (Windows, o cualquier sistema; no necesita bash ni PowerShell)
+python scripts/setup.py        # en Linux / macOS: python3 scripts/setup.py
+python scripts/verify.py       # en Linux / macOS: python3 scripts/verify.py
+```
+
+Ambos scripts se ejecutan desde la raiz del repositorio y terminan con codigo de salida 1
+si algo falla.
 
 ## Iniciar el proyecto
 
@@ -94,8 +113,8 @@ cd apps/frontend && npm run dev
 |---------|-------------|
 | `npm run docker:up` | Levanta MongoDB con Docker |
 | `npm run docker:down` | Detiene MongoDB |
-| `npm run setup` | Setup automatico completo |
-| `npm run verify` | Verifica que todo esta configurado |
+| `npm run setup` | Setup automatico completo (Linux/macOS; en Windows usa `python scripts/setup.py`) |
+| `npm run verify` | Verifica que todo esta configurado (Linux/macOS; en Windows usa `python scripts/verify.py`) |
 | `npm run check-requirements` | Comprueba los requisitos del workshop (dominios, software, herramienta de IA) |
 
 ## URLs

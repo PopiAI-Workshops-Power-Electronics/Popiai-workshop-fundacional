@@ -126,4 +126,4 @@ npm install
 docker-compose up -d
 ```
 
-2. Contacta al instructor con el output de `./scripts/verify.sh`.
+2. Contacta al instructor con el output de `./scripts/verify.sh` (Linux/macOS) o `python scripts/verify.py` (Windows).
