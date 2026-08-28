@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Monorepo base para el workshop "Desarrollo con AI Agents y Claude Code" de PopiAI Software Services.
+Repositorio `Popiai-workshop-fundacional` (org `PopiAI-Workshops-Power-Electronics`): monorepo base del Workshop Fundacional "Desarrollo con AI Agents y Claude Code" de PopiAI Software Services.
 Contiene un backend NestJS y un frontend Next.js conectados a MongoDB.
 Los asistentes implementarán features usando Claude Code como agente de desarrollo.
 

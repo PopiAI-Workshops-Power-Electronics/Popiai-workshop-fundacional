@@ -1,6 +1,6 @@
-# PopiAI Workshop — Proyecto Base
+# Popiai-workshop-fundacional
 
-Monorepo NestJS + Next.js para el workshop **"Desarrollo con AI Agents y Claude Code"** de PopiAI Software Services.
+Repositorio base del **Workshop Fundacional** (`PopiAI-Workshops-Power-Electronics/Popiai-workshop-fundacional`). Monorepo NestJS + Next.js para el workshop **"Desarrollo con AI Agents y Claude Code"** de PopiAI Software Services.
 
 ## Tech Stack
 
