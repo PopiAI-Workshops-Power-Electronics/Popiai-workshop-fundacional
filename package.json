@@ -1,0 +1,27 @@
+{
+  "name": "popi-workshop-base",
+  "version": "1.0.0",
+  "description": "Monorepo base para el workshop de PopiAI — AI Agents y Claude Code",
+  "private": true,
+  "workspaces": [
+    "apps/backend",
+    "apps/frontend"
+  ],
+  "scripts": {
+    "start:backend": "npm run start:dev --workspace=apps/backend",
+    "start:frontend": "npm run dev --workspace=apps/frontend",
+    "build:backend": "npm run build --workspace=apps/backend",
+    "build:frontend": "npm run build --workspace=apps/frontend",
+    "build": "npm run build:backend && npm run build:frontend",
+    "test:backend": "npm run test --workspace=apps/backend",
+    "lint:backend": "npm run lint --workspace=apps/backend",
+    "lint:frontend": "npm run lint --workspace=apps/frontend",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "setup": "./scripts/setup.sh",
+    "verify": "./scripts/verify.sh"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
