@@ -21,6 +21,30 @@ Repositorio base del **Workshop Fundacional** (`PopiAI-Workshops-Power-Electroni
 - npm v10+
 - [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) (para el sistema de agentes)
 
+### Comprobar los requisitos del workshop
+
+Antes del workshop, ejecuta el script de comprobacion. Verifica que el equipo cumple
+los requisitos del documento *Requisitos de sala y setup*: acceso HTTPS a los dominios
+necesarios (GitHub, Anthropic, npm, Docker Hub, etc.), software instalado (Git, Node.js 20,
+npm, Docker + Docker Compose) y que hay al menos una herramienta de IA disponible
+(Claude Code, GitHub Copilot CLI o Codex CLI).
+
+Hay dos versiones equivalentes, elige la que te resulte mas comoda:
+
+```bash
+# Con Python 3 (no necesita Node instalado)
+python3 scripts/check-requirements.py    # Linux / macOS
+python scripts/check-requirements.py     # Windows
+
+# Con Node.js
+node scripts/check-requirements.js
+# o, si ya tienes las dependencias instaladas:
+npm run check-requirements
+```
+
+Si algun requisito no se cumple, el script lo indica en el resumen final y termina con
+codigo de salida 1.
+
 ## Setup rapido
 
 ```bash
@@ -72,6 +96,7 @@ cd apps/frontend && npm run dev
 | `npm run docker:down` | Detiene MongoDB |
 | `npm run setup` | Setup automatico completo |
 | `npm run verify` | Verifica que todo esta configurado |
+| `npm run check-requirements` | Comprueba los requisitos del workshop (dominios, software, herramienta de IA) |
 
 ## URLs
 

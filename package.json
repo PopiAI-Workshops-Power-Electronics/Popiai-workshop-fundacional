@@ -19,7 +19,8 @@
     "docker:up": "docker compose up -d",
     "docker:down": "docker compose down",
     "setup": "./scripts/setup.sh",
-    "verify": "./scripts/verify.sh"
+    "verify": "./scripts/verify.sh",
+    "check-requirements": "node scripts/check-requirements.js"
   },
   "engines": {
     "node": ">=20.0.0"
